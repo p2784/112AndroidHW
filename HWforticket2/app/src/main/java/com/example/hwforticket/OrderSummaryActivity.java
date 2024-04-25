@@ -22,16 +22,20 @@ public class OrderSummaryActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        // 找到需要顯示資訊的 TextView
+        TextView summaryTextView = findViewById(R.id.summaryTextView);
 
-        String gender = getIntent().getStringExtra("gender");
-        String ticketType = getIntent().getStringExtra("ticketType");
-        int ticketCount = getIntent().getIntExtra("ticketCount", 0);
-        int totalPrice = getIntent().getIntExtra("totalPrice", 0);
+        Intent intent = getIntent();
+        String gender = intent.getStringExtra("gender");
+        String ticketType = intent.getStringExtra("ticketType");
+        int ticketCount = intent.getIntExtra("ticketCount", 0);
+        int totalAmount = intent.getIntExtra("totalAmount", 0);
 
-        // 在TextView中显示信息
-        TextView genderTextView = findViewById(R.id.ticket_details);
-        genderTextView.setText("性别: " + gender +"\n" +ticketType+":"
-                +ticketCount+"張"+"\n"+"總金額: $" + totalPrice );
-
+        // 將取出的資訊和總金額設定到 TextView 上
+        String summary = "性別: " + gender + "\n" +
+                "票種: " + ticketType + "\n" +
+                "張數: " + ticketCount + "\n" +
+                "總金額: " + totalAmount;
+        summaryTextView.setText(summary);
     }
 }

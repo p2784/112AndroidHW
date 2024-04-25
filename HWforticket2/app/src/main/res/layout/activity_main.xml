@@ -43,8 +43,8 @@
         android:id="@+id/btnEnter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="492dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="560dp"
         android:text="確認"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -117,7 +117,7 @@
     </RadioGroup>
 
     <TextView
-        android:id="@+id/txtshowerror"
+        android:id="@+id/txtError"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="132dp"

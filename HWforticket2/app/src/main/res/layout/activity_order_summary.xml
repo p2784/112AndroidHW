@@ -8,9 +8,9 @@
     tools:context=".OrderSummaryActivity">
 
     <TextView
-        android:id="@+id/ticket_details"
-        android:layout_width="90dp"
-        android:layout_height="146dp"
+        android:id="@+id/summaryTextView"
+        android:layout_width="234dp"
+        android:layout_height="354dp"
         android:layout_marginStart="48dp"
         android:layout_marginTop="56dp"
         app:layout_constraintStart_toStartOf="parent"
