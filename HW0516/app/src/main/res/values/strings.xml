@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">HW0516</string>
+    <string-array name="options">
+        <item>主餐</item>
+        <item>附餐</item>
+        <item>飲料</item>
+    </string-array>
+    <string-array name="Main">
+        <item>炒麵</item>
+        <item>炒飯</item>
+        <item>水餃</item>
+    </string-array>
+    <string-array name="additions">
+        <item>雞塊</item>
+        <item>濃湯</item>
+        <item>薯條</item>
+    </string-array>
+    <string-array name="drink">
+        <item>果汁</item>
+        <item>水</item>
+        <item>汽水</item>
+    </string-array>
+    <string name="title_activity_result">ResultActivity</string>
+</resources>
